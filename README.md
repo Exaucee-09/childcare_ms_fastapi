@@ -25,7 +25,7 @@ childcare-management-system/
 ├── README.md                # Project documentation
 └── .gitignore               # Git ignore rules
 
-
+```
 ## Requirements
 - Python 3.8+
 - FastAPI
