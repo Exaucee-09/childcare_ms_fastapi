@@ -6,20 +6,23 @@ This is a Childcare Management System built using **FastAPI**. It supports CRUD 
 - REST API for managing childcare data (CRUD operations for children, staff, and attendance).
 - Efficient processing of large datasets using `Dask`.
 - Integration with CSV files for external data processing.
-- Example script (`datamerge.py`) demonstrating data merging and manipulation.
+- Example script (`datamanipulation.py`) demonstrating data merging and manipulation.
 
 ## Project Structure
 ```plaintext
 childcare-management-system/
-├── app/                     # FastAPI application
 │   ├── main.py              # Entry point of the FastAPI application
 │   ├── models.py            # Database models
 │   ├── schemas.py           # Pydantic schemas
 │   ├── datageneration.py    # generating a vast amount of data at once
-│   ├── database.py          # Database connection
+│   ├── datamerge.py         # Script to merge and analyze data             
 │   ├── routers/             # API routes
-│   ├── children.csv         # Example CSV file for children data
-│   ├── attendance.csv       # Example CSV file for attendance data
+│   ├── csvdata.py 
+│   ├── children_combined.csv
+│   ├── children_part1.csv   
+│   ├── children_part2.py
+│   ├── children.csv    
+│   ├── database.py          # Database connection
 │   └── datamanipulation.py  # Script for merging and analyzing data
 ├── requirements.txt         # Python dependencies
 ├── README.md                # Project documentation
